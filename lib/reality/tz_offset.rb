@@ -43,7 +43,7 @@ module Reality
     end
 
     def local(*values)
-      values << to_s until values.count == 7
+      values << to_s until values.count == 6
       Time.new(*values)
     end
 
