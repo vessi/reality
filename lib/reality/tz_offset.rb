@@ -43,8 +43,8 @@ module Reality
     end
 
     def local(*values)
-      values << 0 until values.count == 6
-      Time.new(*values, to_s)
+      values << to_s until values.count == 7
+      Time.new(*values)
     end
 
     # FIXME: usec are lost
